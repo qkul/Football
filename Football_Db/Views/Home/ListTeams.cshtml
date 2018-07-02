@@ -1,0 +1,17 @@
+﻿@model IEnumerable<Football_Db.Models.Team>
+@{
+    ViewBag.Title = "ListTeams";
+}
+
+
+<div>
+    <h2>ListTeams</h2>
+    <hr />
+        @foreach (var team in Model)
+        {
+            <h5>@team.Name</h5>
+            <hr/>
+        }
+
+</div>
+
